@@ -49,7 +49,20 @@ extension LinkedList:CustomStringConvertible{
         }
         
     }
+    
+    public func append(_ value: Value){
+        
+        guard !isEmpty else{
+            push(value)
+            return
+        }
+        
+        tail!.next = Node (value: value)
+        tail = tail!.next
+    }
 }
+
+
 
 
 
@@ -69,5 +82,10 @@ print(list)  //List is empty
 list.push(5) //Add element in Head
 list.push(6)
 list.push(7)
+
+print(list)
+
+list.append(100) //Add element in Tail
+list.append(120)
 
 print(list)
