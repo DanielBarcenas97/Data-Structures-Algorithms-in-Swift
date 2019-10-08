@@ -1,2 +1,2 @@
-# Data-Structures-Algorithms-in-Swift
+# Data-Structures-And-Algorithms-in-Swift
 Implementing practical data structures and algorithms with Swift 
